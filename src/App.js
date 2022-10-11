@@ -3,7 +3,6 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Layout/Main';
 import Home from './components/Home/Home';
-import Quiz from './components/Quiz/Quiz';
 import Questions from './components/Questions/Questions';
 import Chart from './components/Chart/Chart';
 import Mcq from './components/Mcq/Mcq';
