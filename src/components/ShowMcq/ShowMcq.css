@@ -1,6 +1,28 @@
 .mcq{
     background-color: rgb(192, 232, 242);
     margin: 20px;
-    height: 250px;
+    height: 350px;
+    padding: 20px;
     
+}
+
+.input{
+    margin: 10px;
+    padding: 10px;
+    height: 80px;
+    
+}   
+
+.option{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    word-wrap: break-word;
+    
+}
+.ans{
+    display: none;
+    color: red;
+}
+.me{
+    display: flex;
 }
