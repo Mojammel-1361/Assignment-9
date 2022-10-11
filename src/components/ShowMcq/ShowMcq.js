@@ -1,5 +1,7 @@
 import React from 'react';
 import './ShowMcq.css'
+
+
 const ShowMcq = ({mcq}) => {
     const { question, options} = mcq
    
