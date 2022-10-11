@@ -11,6 +11,10 @@ const Home = () => {
     
     return (
         <div className='home-contender'>
+            <div className='titel'>
+                <h1 className='text-5xl font-bold text-sky-500'>Well come to Quiz Club.com</h1>
+                <p className='text-sky-600 mt-2 p-9'>The most popular quiz competition site in bangladesh. We are now going to discuss the upcoming quiz competition.<br></br> So if you want to participate in any kind of quiz competition on education? However, you can find out about this from here.</p>
+            </div>
             <div className='quiz-container'>
             {
                 quizs.map(quiz => <Quiz
