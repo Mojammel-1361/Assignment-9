@@ -8,7 +8,7 @@ const Operation = ({option, mcq}) => {
         if(correctAnswer===option){
             toast.success(' wow correct Answer', {
                 position: "top-center",
-                autoClose: 5000,
+                autoClose: 2000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -20,7 +20,7 @@ const Operation = ({option, mcq}) => {
         else{
             toast.error('wring Answer', {
                 position: "top-center",
-                autoClose: 5000,
+                autoClose: 2000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -29,6 +29,7 @@ const Operation = ({option, mcq}) => {
                 theme: "colored",
                 });
         }
+        <ToastContainer/>
     }
 
     return (
@@ -37,7 +38,7 @@ const Operation = ({option, mcq}) => {
             <input type='radio' name='fav_language'></input>
             
             <label >{option}</label><br></br>
-            <ToastContainer/>
+            
         </div>
     );
 };

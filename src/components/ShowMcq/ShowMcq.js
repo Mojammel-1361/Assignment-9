@@ -14,7 +14,16 @@ const ShowMcq = ({mcq}) => {
     const {name, question, options, correctAnswer} = mcq;
     
     
-    const notify = () => toast.warn(correctAnswer);
+    const notify = () => toast.warn(correctAnswer, {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
     return (
         <div>
                 <h1>{name}</h1>
@@ -26,8 +35,9 @@ const ShowMcq = ({mcq}) => {
                     icon={faEye}
                 
                     ></FontAwesomeIcon>
-                    <ToastContainer></ToastContainer>
+                    <ToastContainer/>
                 </div>
+                
                 <div className='option'>
                     {
                         
