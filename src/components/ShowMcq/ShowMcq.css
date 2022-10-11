@@ -5,14 +5,6 @@
     padding: 20px;
     
 }
-
-.input{
-    margin: 10px;
-    padding: 10px;
-    height: 80px;
-    
-}   
-
 .option{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -22,7 +14,4 @@
 .ans{
     display: none;
     color: red;
-}
-.me{
-    display: flex;
 }

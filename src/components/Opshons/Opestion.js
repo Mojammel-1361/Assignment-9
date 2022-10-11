@@ -1,21 +1,43 @@
 import React from 'react';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Operation = ({option, mcq}) => {
-    console.log(option);
     const {correctAnswer}=mcq;
 
     const click = () =>{
         if(correctAnswer===option){
-            alert('OK')
+            toast.success(' wow correct Answer', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });;
         }
         else{
-            alert('NO')
+            toast.error('wring Answer', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                });
         }
     }
 
     return (
-        <div onClick={click}>
-            <h1>{option}</h1>
+        <div onClick={click} >
+            
+            <input type='radio' name='fav_language'></input>
+            
+            <label >{option}</label><br></br>
+            <ToastContainer/>
         </div>
     );
 };
