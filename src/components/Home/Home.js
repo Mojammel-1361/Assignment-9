@@ -6,7 +6,6 @@ import './Home.css'
 
 const Home = () => {
     const api = useLoaderData();
-    
     const quizs = (api.data);
     
     return (

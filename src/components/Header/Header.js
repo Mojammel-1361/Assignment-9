@@ -7,12 +7,12 @@ const Header = () => {
         <div className='drop-shadow-lg header'>
 <div className="navbar bg-base-100">
   <div className="flex-1">
-    <a className="btn btn-ghost normal-case text-xl">Quiz Club.com</a>
+    <p className="btn btn-ghost normal-case text-xl">Quiz Club.com</p>
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal p-0">
       <li><Link to='/'>Home</Link> </li>
-      <li><Link to='/quiz'>Quiz</Link> </li>
+      <li><Link to='/questions'>Questions</Link> </li>
       <li><Link to='/chart'>Chart</Link> </li>
       
     </ul>
