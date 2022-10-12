@@ -5,14 +5,16 @@ In the project directory, you can run:
 
 Open [https://celebrated-faloodeh-981970.netlify.app]
 
-### `what i learn in this assignment.`
+### `what i learn in this assignment and use my live side.`
 
-1. createBrowserRouter\
-2. Routes, RouterProvider, Route \
-3. toastify, font Awesome\
-4. recharts\
-5. Not Found\
-6.  setup router, path\
+1. createBrowserRouter
+2. Routes, RouterProvider, Route
+3. toastify, font Awesome
+4. recharts
+5. Not Found 404
+6. setup router, path
+7. Router-element-prop
+8. button event handler round
 
 
 
