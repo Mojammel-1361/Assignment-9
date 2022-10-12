@@ -2,8 +2,19 @@
     display: grid;
     grid-template-columns: 1fr ;
 }
+.home-contender img{
+    width: 60px;
+    
+    
+}
+.img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
 .titel{
-    margin-top: 20px;
+    margin-top: 10px;
     
 }
 .quiz-container{
