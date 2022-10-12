@@ -14,7 +14,7 @@ const ShowMcq = ({mcq}) => {
     const {name, question, options, correctAnswer} = mcq;
     
     
-    const notify = () => toast.warn(correctAnswer, {
+    const notify = () => toast.info(correctAnswer, {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
@@ -31,7 +31,7 @@ const ShowMcq = ({mcq}) => {
                 <div className='text-2xl sm:text-md question'>
                     <div><h1>{question}-</h1>  </div>
 
-                    <div>
+                    <div className='icon'>
                     <FontAwesomeIcon
                     onClick={notify}    
                     icon={faEye}

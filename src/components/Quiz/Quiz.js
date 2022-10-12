@@ -10,7 +10,7 @@ const Quiz = ({quiz}) => {
             <img src={logo} alt="" />
             <h1 className='text-lg'>Quiz topic: {name}</h1>
             <h1 className='text-sm'>Total Question : {total}</h1>
-            <p class="btn btn-sm"> <Link to={`/quiz/${id}`}>Start</Link> </p>
+            <p class="btn btn-sm btn-outline btn-primary" > <Link to={`/quiz/${id}`}>Start</Link> </p>
         </div>
     );
 };

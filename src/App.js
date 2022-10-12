@@ -41,7 +41,7 @@ function App() {
     },
     {
       path: '*',
-      element: <div>some thing is wring is 404 place cha this</div>
+      element: <div>something is wrong is Fix 404 Page Not Found</div>
     }
   ])
   return (

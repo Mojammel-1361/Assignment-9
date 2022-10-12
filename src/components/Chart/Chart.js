@@ -3,43 +3,25 @@ import { useLoaderData } from 'react-router-dom';
 
 
 
-import { LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 
 const Chart = () => {
-// const data = [
-//         {
-//         id: 1,
-//         name: "React",
-//         total: 8,
-//         },
-//         {
-//         id: 2,
-//         name: "JavaScript",
-//         total: 9,
-//         },
-//         {
-//         id: 4,
-//         name: "CSS",
-//         total: 8,
-//         },
-//         {
-//         id: 5,
-//         name: "Git",
-//         total: 11,
-//         },
-//         ];
+
     const {data} = useLoaderData();
     
     return (
         
-        <div className='mt-2 chart'>
-            <LineChart width={600} height={500} data={data} >
+        <div className='m-5'>
+            <div>
+            <LineChart width={600} height={400} data={data} >
                 <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip/>
             </LineChart>
             
+        </div>
         </div>
     );
 };
