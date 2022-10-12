@@ -14,7 +14,7 @@ const Home = () => {
             <div className='img-div'>
                 <div><img src={img} alt="" /></div>
             
-            <div><h1 className='text-5xl font-bold text-sky-500'>Well come to Quiz Club.com</h1></div>
+            <div><h1 className='text-2xl  font-bold text-sky-500 '>Well come to Quiz Club.com</h1></div>
             </div>
             
             <div className='titel'>

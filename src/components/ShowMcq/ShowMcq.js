@@ -28,13 +28,15 @@ const ShowMcq = ({mcq}) => {
         <div>
                 <h1>{name}</h1>
             <div className='mcq'>
-                <div className='text-2xl sm:text-md'>
-                    <h1>{question}</h1>
+                <div className='text-2xl sm:text-md question'>
+                    <div><h1>{question}-</h1>  </div>
+
+                    <div>
                     <FontAwesomeIcon
                     onClick={notify}    
                     icon={faEye}
-                
                     ></FontAwesomeIcon>
+                    </div>
                     <ToastContainer/>
                 </div>
                 
@@ -50,7 +52,7 @@ const ShowMcq = ({mcq}) => {
                     }
                 </div>
                 
-                    <p className='ans'>correctAnswer: {correctAnswer}</p>
+                    
                 
             </div>
             

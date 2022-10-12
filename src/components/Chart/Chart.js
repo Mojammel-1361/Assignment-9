@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 
 
+
 import { LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
 
 const Chart = () => {
@@ -28,15 +29,15 @@ const Chart = () => {
 //         },
 //         ];
     const {data} = useLoaderData();
-    console.log(data);
+    
     return (
         
-        <div className='mt-5 '>
-            <LineChart width={900} height={500} data={data} >
+        <div className='mt-2 chart'>
+            <LineChart width={600} height={500} data={data} >
                 <Line type="monotone" dataKey="total" stroke="#82ca9d" />
                 <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip/>
+                <YAxis />
+                <Tooltip/>
             </LineChart>
             
         </div>

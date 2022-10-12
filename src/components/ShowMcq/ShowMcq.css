@@ -1,7 +1,8 @@
 .mcq{
-    background-color: rgb(192, 232, 242);
+    background-color: rgb(213, 226, 238);
+    border-radius: 20px;
     margin: 20px;
-    height: 350px;
+    height: auto;
     padding: 20px;
     
 }
@@ -9,9 +10,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     word-wrap: break-word;
+    gap: 10px;
     
 }
-.ans{
-    display: none;
-    color: red;
+.question{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
